@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.firebase:firebase-admin:6.3.0'
+    implementation project(':pluginsdk')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
